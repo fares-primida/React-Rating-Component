@@ -89,4 +89,39 @@ $Very-Dark-Blue: hsl(216, 12%, 8%);
             }
         }
     }
+
+    .Thanks {
+        @include Center(flex  , center , center);
+        .image {
+            @include Center(flex  , center , center);
+            @include Position-And-Size(default , 100% , 110px);
+            img {
+                height: 100%;
+            }
+        } 
+    }
+    .result {
+        @include Center(flex  , center , center);
+        .rateResult {
+            @include Position-And-Size(default , 220px , 30px);
+            @include Center(flex  , center , center);
+            background-color: $Medium-Blue;
+            color: orangered;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    .mess {
+        @include Center(flex  , center , center);
+        font-size: 25px;
+        color: $White;
+        margin-top: 10px;
+    }
+    .end {
+        @include Center(flex  , center , center);
+        text-align: center;
+        grid-row: 4 / 6;
+        color: $Light-Grey;
+    }
 }
