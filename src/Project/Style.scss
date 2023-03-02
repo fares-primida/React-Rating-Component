@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import './Mixens';
+
+// colors
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+
+
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+
+.container {
+    @include Position-And-Size(default , 300px , 400px);
+    background-color: $Dark-Blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5 , auto);
+    border-radius: 20px;
+}
